@@ -27,7 +27,7 @@
               "node_modules/font-awesome/css/font-awesome.css"
             ],
             "scripts": [
-              "js/dock.js"
+              "src/assets/js/dock.js"
             ],
             "es5BrowserSupport": true
           },

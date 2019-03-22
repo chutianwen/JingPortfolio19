@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+declare function dockAnimationController(): any;
+
 @Component({
   selector: 'app-nav-dock',
   templateUrl: './nav-dock.component.html',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavDockComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit() {
+    dockAnimationController();
   }
 
 }
