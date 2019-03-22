@@ -29,7 +29,7 @@ function dockAnimationController() {
     var icons = container.childNodes;
     bg = document.getElementById("bg");
     cnt = 0;
-    for (var i = 0; i < icons.length; ++i){
+    for (var i = 0; i < icons.length; ++i) {
       if (icons[i].tagName === "IMG") {
         iconLeft[cnt] = icons[i].getBoundingClientRect().left;
         icon[cnt++] = icons[i];
@@ -222,7 +222,7 @@ function dockAnimationController() {
 
     document.onmousemove = function (event) {
       console.log(stx);
-      if(active) {
+      if (active) {
         var dx = event.pageX - stx,
           dy = event.pageY - sty;
         finder.style.left = dx + "px";
