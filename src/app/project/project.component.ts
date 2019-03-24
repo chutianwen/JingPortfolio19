@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-// export declare function projectBGAnimationController(): any;
+export declare function projectBGAnimationController(): any;
+export declare function cardAnimationController(): any;
 
 @Component({
   selector: 'app-project',
@@ -12,7 +13,8 @@ export class ProjectComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    // triBackgroundAnimationController();
+    projectBGAnimationController();
+    cardAnimationController();
   }
 
 }
