@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+// export declare function projectBGAnimationController(): any;
+
 @Component({
   selector: 'app-project',
   templateUrl: './project.component.html',
@@ -10,6 +12,7 @@ export class ProjectComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    // triBackgroundAnimationController();
   }
 
 }

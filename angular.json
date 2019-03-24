@@ -33,7 +33,7 @@
               "src/assets/js/vendors/trianglify.min.js",
               "src/assets/js/dock.js",
               "src/assets/js/Card-polygon-4.js",
-              "src/assets/js/demo-4.js",
+              "src/assets/js/projectBG.js",
               "src/assets/js/typewriter.js",
             ],
             "es5BrowserSupport": true
