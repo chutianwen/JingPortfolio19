@@ -13,16 +13,16 @@ class CustomCursor {
         }
     }
     getBounds() {
-        const { width, height } = this.cursor.getBoundingClientRect()
-        return { width, height }
+        const { width, height } = this.cursor.getBoundingClientRect();
+        return { width, height };
     }
     init() {
-        this.initEvents()
+        this.initEvents();
     }
     initEvents() {
-        this.target.addEventListener('mousedown', e => this.mouseDown(e))
-        this.target.addEventListener('mouseup', e => this.mouseUp(e))
-        this.target.addEventListener('mousemove', e => this.mouseMove(e))
+        this.target.addEventListener('mousedown', e => this.mouseDown(e));
+        this.target.addEventListener('mouseup', e => this.mouseUp(e));
+        this.target.addEventListener('mousemove', e => this.mouseMove(e));
 
     }
     handleProgress() {
@@ -30,14 +30,14 @@ class CustomCursor {
     }
     mouseDown(e) {
         this.state.isDown = true;
-        console.log(this.state.isDown)
+        console.debug(this.state.isDown);
         TweenMax.to(this.cursor, .5, {
             transformOrigin: 'center',
             scale: .3
-        })
+        });
         TweenMax.to(this.circle, .3, {
             scale: 1
-        })
+        });
         TweenMax.to(this.text, .5, {
             autoAlpha: 0
         })
@@ -45,23 +45,23 @@ class CustomCursor {
     }
     mouseUp() {
         this.state.isDown = false;
-        console.log(this.state.isDown)
+        console.debug(this.state.isDown);
 
         // animate
         TweenMax.to(this.cursor, 1, {
             scale: 1,
             ease: Elastic.easeInOut
-        })
+        });
         TweenMax.to(this.circle, .3, {
             scale: 0
-        })
+        });
         TweenMax.to(this.text, .5, {
             autoAlpha: 1
         })
     }
     mouseMove(e) {
         const { clientX, clientY } = e;
-        const { width, height } = this.getBounds()
+        const { width, height } = this.getBounds();
 
         TweenMax.to(this.cursor, .1, {
             x: clientX - width / 2,

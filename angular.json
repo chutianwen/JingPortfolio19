@@ -31,7 +31,6 @@
               "src/assets/js/cursor.js",
               "src/assets/js/dock.js",
               "src/assets/js/projectBG.js",
-              "src/assets/js/typewriter.js",
               "src/assets/js/vendors/cash.min.js",
               "src/assets/js/vendors/ScrollToPlugin.min.js",
               "src/assets/js/vendors/TweenMax.min.js",
