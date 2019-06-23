@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
 
   projects: Project[];
   titlePlayer: TitlePlayer = new TitlePlayer();
+
   constructor() { }
 
   imagePathAsBackground(img: string) {

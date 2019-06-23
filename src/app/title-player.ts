@@ -1,18 +1,16 @@
 export class TitlePlayer{
   titleTexts = ['designer.', 'coder.', 'illustrator.', 'thinker!'];
+  currentContent = ``;
+
+  public play() {
+    return this.currentContent;
+  }
 
   typeWriter(text: string, i: number, callBack) {
     // check if text isn't finished yet
     if (i < (text.length)) {
-      // add next character to h1
-      const selector = document.querySelector('.title-type-writer');
-      if(selector){
-        selector.innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
-        // wait for a while and call this function again for next character
-        setTimeout(() => this.typeWriter(text, i + 1, callBack), 100);
-      }else{
-        setTimeout(() => this.typeWriter(text, i, callBack), 100);
-      }
+      this.currentContent = text.substring(0, i + 1);
+      setTimeout(() => this.typeWriter(text, i + 1, callBack), 100);
     } else {
       setTimeout(() => callBack(), 700);
     }

@@ -196,7 +196,7 @@ function dockAnimationController() {
       s = "0" + s;
     }
     result = '' + days[day].substr(0, 3) + ' ' + months[month].substr(0, 3) + ' ' + d + '  ' + ' ' + h + ':' + m + ':' + s;
-    document.getElementById('system_time').innerHTML = result;
+    document.getElementById('systemTime').innerHTML = result;
     result = '' + days[day] + ', ' + months[month] + ' ' + d + ', ' + year;
     document.getElementById('system_date_line').innerHTML = result;
   }
