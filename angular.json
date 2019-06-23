@@ -27,10 +27,8 @@
               "node_modules/font-awesome/css/font-awesome.css"
             ],
             "scripts": [
-              "src/assets/js/Card-polygon-4.js",
               "src/assets/js/cursor.js",
               "src/assets/js/dock.js",
-              "src/assets/js/projectBG.js",
               "src/assets/js/vendors/cash.min.js",
               "src/assets/js/vendors/ScrollToPlugin.min.js",
               "src/assets/js/vendors/TweenMax.min.js",
