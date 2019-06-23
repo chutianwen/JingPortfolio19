@@ -232,6 +232,5 @@ function dockAnimationController() {
   }
 
   init();
-  setInterval(date_time, 1000);
   // drag();
 }

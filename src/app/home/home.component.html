@@ -1,4 +1,32 @@
-<div class="container" id="intro">
-  <h1>Welcome to Jing's Page</h1>
+
+<div class="container" id="app">
+  <div style="display: block;height: 50px;"></div>
+  <h1>
+    My Name is <span class="red">J</span>ing <span class="red">H</span>AN
+  </h1>
   <h2>I'm a <span class="title">designer, coder, and thinker</span></h2>
+  <div style="display: block;height: 50px;"></div>
+
+  <div style="text-align:center;" *ngIf="projects">
+    <div *ngFor="let project of projects" [style.backgroundImage]="imagePathAsBackground(project.img)" class="blog-card">
+
+      <a routerLink={{project.url}}>
+        <div class="title-content">
+          <h3>{{ project.name }}</h3>
+          <hr/>
+          <div class="desc">{{ project.slogan }}</div>
+        </div>
+        <div class="card-info">{{ project.desc }}</div>
+        <div class="utility-info">
+          <ul class="utility-list">
+            <li class="comments">{{ project.tag }}</li>
+            <li class="date">{{ project.company }}</li>
+          </ul>
+        </div>
+        <div class="gradient-overlay"></div>
+        <div class="color-overlay"></div>
+      </a>
+    </div>
+  </div>
 </div>
+

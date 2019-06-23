@@ -23,18 +23,22 @@
               "src/assets"
             ],
             "styles": [
+//              "src/assets/css/cursor.css",
+//              "src/assets/css/mavericks.css",
+//              "src/assets/css/pj_detail.css",
               "src/styles.css",
               "node_modules/font-awesome/css/font-awesome.css"
             ],
             "scripts": [
-              "src/assets/js/vendors/ScrollToPlugin.min.js",
-              "src/assets/js/vendors/TweenMax.min.js",
-              "src/assets/js/vendors/cash.min.js",
-              "src/assets/js/vendors/trianglify.min.js",
-              "src/assets/js/dock.js",
               "src/assets/js/Card-polygon-4.js",
+              "src/assets/js/cursor.js",
+              "src/assets/js/dock.js",
               "src/assets/js/projectBG.js",
               "src/assets/js/typewriter.js",
+              "src/assets/js/vendors/cash.min.js",
+              "src/assets/js/vendors/ScrollToPlugin.min.js",
+              "src/assets/js/vendors/TweenMax.min.js",
+              "src/assets/js/vendors/trianglify.min.js",
             ],
             "es5BrowserSupport": true
           },

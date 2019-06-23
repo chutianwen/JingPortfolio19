@@ -5,7 +5,7 @@ import {HomeComponent} from './home/home.component';
 import {CodeComponent} from './code/code.component';
 import {ContactComponent} from './contact/contact.component';
 import {GalleryComponent} from './gallery/gallery.component';
-import {ProjectComponent} from './project/project.component';
+import {FundAnalyzerComponent} from './fund-analyzer/fund-analyzer.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'code', component: CodeComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'gallery', component: GalleryComponent },
-  { path: 'project', component: ProjectComponent },
+  { path: 'fund-analyzer', component: FundAnalyzerComponent},
 ];
 
 @NgModule({
