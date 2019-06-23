@@ -8,11 +8,11 @@ import { AppComponent } from './app.component';
 import { NavDockComponent } from './nav-dock/nav-dock.component';
 import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
-import { ContactComponent } from './contact/contact.component';
 import { CodeComponent } from './code/code.component';
-import { BlogComponent } from './blog/blog.component';
 import { MenubarComponent } from './menubar/menubar.component';
 import { FundAnalyzerComponent } from './fund-analyzer/fund-analyzer.component';
+import { TimelineComponent } from './timeline/timeline.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -21,11 +21,11 @@ import { FundAnalyzerComponent } from './fund-analyzer/fund-analyzer.component';
     NavDockComponent,
     HomeComponent,
     GalleryComponent,
-    ContactComponent,
     CodeComponent,
-    BlogComponent,
     MenubarComponent,
     FundAnalyzerComponent,
+    TimelineComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,

@@ -96,7 +96,7 @@ function dockAnimationController() {
     }
 
     if (!movein) {
-      var cWidth = 0;
+      let cWidth = 0;
 
       for (var i = 0; i < leftIndex; ++i) {
         newWidth[i] = ICON_MIN_WIDTH;
