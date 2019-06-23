@@ -9,13 +9,12 @@ export class MenubarComponent implements OnInit {
 
   constructor() { }
 
-  dateDisplay(){
+  static dateDisplay(){
     const date = new Date();
     const year = date.getFullYear();
     const month = date.getMonth();
     const months = ['January', 'February', 'March', 'April', 'May', 'June', 'Jully',
       'August', 'September', 'October', 'November', 'December'];
-    const d = date.getDate();
     const day = date.getDay();
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const h = date.getHours();
@@ -41,7 +40,7 @@ export class MenubarComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.dateDisplay();
+    MenubarComponent.dateDisplay();
   }
 
 }
